@@ -29,7 +29,7 @@ class GameScene: SKScene {
         displayWood.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame)-30);
         
         self.addChild(displayWood)
-        
+   friendlyfriend
         
     }
     
