@@ -10,11 +10,11 @@ import SpriteKit
 
 class GameScene: SKScene {
     
-    var woodStockpile = 0.0
+    var woodStockpile = 0
     var chopWood:SKLabelNode!
     var displayWood:SKLabelNode!
 
-    var fishStockpile = 0.0
+    var fishStockpile = 0
     var goFishing:SKLabelNode!
     
     override func didMoveToView(view: SKView) {
