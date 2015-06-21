@@ -10,9 +10,12 @@ import SpriteKit
 
 class GameScene: SKScene {
     
-    var woodStockpile = 0
+    var woodStockpile = 0.0
     var chopWood:SKLabelNode!
     var displayWood:SKLabelNode!
+
+    var fishStockpile = 0.0
+    var goFishing:SKLabelNode!
     
     override func didMoveToView(view: SKView) {
         /* Setup your scene here */
@@ -29,7 +32,7 @@ class GameScene: SKScene {
         displayWood.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame)-30);
         
         self.addChild(displayWood)
-   friendlyfriend
+ 
         
     }
     

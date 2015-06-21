@@ -5,7 +5,15 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
+<<<<<<< Updated upstream
 	<string>63A132C6-30E9-4D1E-8FFB-0EA5E309A676</string>
+=======
+<<<<<<< HEAD
+	<string>D9171435-7EFC-4D38-8FB9-24F6A9B37132</string>
+=======
+	<string>63A132C6-30E9-4D1E-8FFB-0EA5E309A676</string>
+>>>>>>> origin/master
+>>>>>>> Stashed changes
 	<key>IDESourceControlProjectName</key>
 	<string>SpriteKit Testing</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
