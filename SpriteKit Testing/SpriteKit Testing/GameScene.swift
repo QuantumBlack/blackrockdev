@@ -10,39 +10,43 @@ import SpriteKit
 
 class GameScene: SKScene {
     
-    var woodStockpile = 0
-    var chopWood:SKLabelNode!
-    var displayWood:SKLabelNode!
-
-    var fishStockpile = 0
-    var goFishing:SKLabelNode!
+    /* Declaring workers */
+    var workerStock = 0
+    var workerAdd:SKLabelNode!
+    var workerDisplay:SKLabelNode!
+    
+    /* Declaring wood */
+    var woodStock = 0
+    var woodAdd:SKLabelNode!
+    var woodDisplay:SKLabelNode!
     
     override func didMoveToView(view: SKView) {
         /* Setup your scene here */
-        chopWood = SKLabelNode(fontNamed:"Helvetica Neue")
-        chopWood.text = "Saw Trees";
-        chopWood.fontSize = 65;
-        chopWood.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame)+30);
+        woodAdd = SKLabelNode(fontNamed:"Helvetica Neue")
+        woodAdd.text = "Saw Trees";
+        woodAdd.fontSize = 65;
+        woodAdd.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame)+30);
         
-        self.addChild(chopWood)
+        self.addChild(woodAdd)
         
-        displayWood = SKLabelNode(fontNamed:"Helvetica Neue")
-        displayWood.text = String(woodStockpile);
-        displayWood.fontSize = 65;
-        displayWood.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame)-30);
+        woodDisplay = SKLabelNode(fontNamed:"Helvetica Neue")
+        woodDisplay.text = String(woodStock);
+        woodDisplay.fontSize = 65;
+        woodDisplay.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame)-30);
         
-        self.addChild(displayWood)
+        self.addChild(woodDisplay)
  
         
     }
     
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+        
         /* Called when a touch begins */
         
         for touch in (touches as! Set<UITouch>) {
-           if chopWood.containsPoint(touch.locationInNode(self)) {
-                woodStockpile += 1
-                displayWood.text = String(woodStockpile)
+           if woodAdd.containsPoint(touch.locationInNode(self)) {
+                woodStock += 1
+                woodDisplay.text = String(woodStock)
             }
             
         }
